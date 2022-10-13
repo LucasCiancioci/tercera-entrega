@@ -1,0 +1,274 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.pagina-color {
+  background-color: antiquewhite;
+}
+.pagina-color header {
+  padding: 8px;
+}
+@media screen and (max-width: 450px) {
+  .pagina-color header ul {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+.iconos {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  background-color: black;
+  display: flex;
+  justify-content: left;
+}
+@media screen and (max-width: 450px) {
+  .iconos {
+    font-size: 30px;
+  }
+}
+
+main .pagina {
+  display: flex;
+  flex-direction: row;
+  padding-top: 25px;
+}
+@media screen and (max-width: 450px) {
+  main .pagina {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .pagina article {
+    margin: 3%;
+  }
+}
+main .pagina article h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10%;
+}
+main .pagina article .pagina-texto {
+  padding-left: 10%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 450px) {
+  main .pagina article .pagina-texto {
+    padding-left: 0%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .pagina .foto-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 10% 0%;
+  }
+}
+
+main .stock {
+  display: grid;
+  margin: 20px;
+  font-style: initial;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 30px;
+  object-fit: cover;
+}
+@media screen and (max-width: 450px) {
+  main .stock {
+    display: grid;
+    font-style: initial;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+  }
+  main .stock .stock-diseño {
+    box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+    width: 100vw;
+  }
+  main .stock .btn {
+    width: 20%;
+    height: 3%;
+  }
+}
+
+main .carrito {
+  padding: 30px;
+}
+@media screen and (max-width: 450px) {
+  main .carrito {
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+main .carrito .imagen-carrito {
+  width: 40vw;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 450px) {
+  main .carrito .imagen-carrito {
+    width: 100vw;
+  }
+}
+main .carrito .carrito-bordes:hover {
+  transform: scale(1.5);
+  border: solid 5px black;
+  border-radius: 20px;
+  position: relative;
+  width: 320px;
+  height: 50px;
+  left: 760px;
+  transition: all 2s;
+}
+@media screen and (max-width: 450px) {
+  main .carrito .carrito-bordes:hover {
+    border: solid 5px black;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+section .pago {
+  padding: 55px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 450px) {
+  section .pago {
+    font-size: 30px;
+    padding: 35px;
+    margin-bottom: 55px;
+  }
+}
+section .pago-tarjeta {
+  padding: 60px;
+}
+@media screen and (max-width: 450px) {
+  section .pago-tarjeta {
+    font-size: 30px;
+    padding: 35px;
+  }
+}
+section .bancos {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 450px) {
+  section .bancos {
+    font-size: 60px;
+    margin-bottom: 55px;
+  }
+}
+section .debito {
+  padding: 70px;
+}
+@media screen and (max-width: 450px) {
+  section .debito {
+    font-size: 30px;
+    padding: 50px;
+  }
+}
+section .debito-logos {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+  padding: 60px;
+}
+@media screen and (max-width: 450px) {
+  section .debito-logos {
+    font-size: 50px;
+    margin-bottom: 55px;
+    padding: 50px;
+  }
+}
+
+.contacto {
+  padding: 30px;
+  border: 1px black;
+}
+@media screen and (max-width: 450px) {
+  .contacto {
+    padding: 0px;
+    font-size: 20px;
+    padding-top: 15%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacto .mapa {
+    height: 80%;
+    width: 80%;
+    margin-top: 55px;
+    padding-top: 10%;
+  }
+}
+.contacto .formulario {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 4px black;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  left: 740px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 450px) {
+  .contacto .formulario {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    border: solid 4px black;
+    width: 400px;
+    height: 300px;
+    left: 30px;
+  }
+}
+
+.pagina-color header, main .pagina, main .carrito, section .pago, section .pago-tarjeta, section .debito, .contacto {
+  font-style: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Fascinate Inline", cursive;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

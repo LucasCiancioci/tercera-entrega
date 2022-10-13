@@ -1,0 +1,72 @@
+section {
+    .pago {
+       @extend %fuente ;
+        padding: 55px;
+        margin-top: 20px;
+        
+
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+            padding: 35px;
+            margin-bottom: 55px;
+        }
+    
+    }
+
+    .pago-tarjeta {
+        @extend %fuente;
+        padding: 60px;
+        
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+        padding: 35px;
+    }
+
+    }
+
+    .bancos {
+        font-size: 50px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+        @media screen and (max-width: 450px) {
+            font-size: 60px;
+            margin-bottom: 55px;
+        }
+    
+    }
+
+    .debito {
+        @extend %fuente ;
+        padding: 70px;
+       
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+            padding: 50px;
+        }
+    }
+
+    .debito-logos {
+        font-size: 50px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+        padding: 60px;
+        @media screen and (max-width: 450px) {
+            font-size: 50px;
+            margin-bottom: 55px;
+            padding: 50px;
+        }
+
+    }
+}

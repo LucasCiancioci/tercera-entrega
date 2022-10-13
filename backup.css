@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* header */
+.header {
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    font-family: 'Fascinate Inline', cursive;
+     padding: 8px; 
+}
+    
+
+/* inicio */
+.pagina-color {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10%;
+}
+
+.pagina {
+
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fascinate Inline', cursive;
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+.pagina-texto {
+    padding-left: 10%;
+    margin-right: 30px;
+
+}
+
+
+/* footer */
+.iconos {
+
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+}
+
+/* PRODUCTOS */
+
+
+.stock {
+    display: grid;
+    margin: 20px;
+    font-style: initial;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 30px;
+    object-fit: cover;
+}
+
+.stock-diseño {
+    box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: -9px -7px 22px -2px rgba(0, 0, 0, 0.42);
+}
+
+.encabezado {
+    padding: 30px;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.btn{ 
+width: 20%;
+ height: 3%;
+ 
+}
+
+
+/* FORMAS DE PAGO */
+
+.pago {
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Fascinate Inline', cursive;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.pago-tarjeta {
+    font-style: inherit;
+    font-size: 30px;
+    font-family: 'Fascinate Inline', cursive;
+    padding: 55px;
+    text-align: center;
+}
+
+.bancos {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.debito {
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Fascinate Inline', cursive;
+    padding: 70px;
+    text-align: center;
+
+}
+
+.debito-logos {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    padding: 60px;
+}
+
+/* CARRITO */
+
+.carrito-bordes:hover{
+    transform: scale(1.5);
+}
+
+.carrito {
+    padding: 30px;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fascinate Inline', cursive;
+    text-align: center;
+    
+}
+
+.carrito-bordes {
+    border: solid 5px black;
+    border-radius: 20px;
+    position: relative;
+    width: 320px;
+    height: 50px;
+    left: 760px;
+    transition: all 2s;
+}   
+
+
+
+
+/* CONTACTO */
+
+.contacto {
+    padding: 30px;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fascinate Inline', cursive;
+    text-align: center;
+    border: 1px black;
+}
+
+.formulario {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 4px black;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 740px;
+    border-radius: 50px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 450px) {
+
+    ul {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .pagina {
+        font-size: 15px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    article {
+        margin: 3%
+    }
+
+    img {
+        width: 100vw;
+        padding: 10% 0%;
+    }
+
+    .pagina-texto {
+        padding-left: 0%;
+
+    }
+
+    ul.menu {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .iconos {
+        font-size: 30px;
+    }
+
+    .stock {
+        display: grid;
+        font-style: initial;
+        font-size: 15px;
+        font-weight: bolder;
+        color: black;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        object-fit: cover;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .carrito {
+        padding: 0px;
+        font-size: 15px;
+    }
+
+    .carrito-bordes {
+        border: solid 5px black;
+        border-radius: 10px;
+        position: relative;
+        width: 300px;
+        height: 50px;
+        left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contacto {
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .formulario {
+        margin-top: 15px;
+        margin-bottom: 80px;
+        border: solid 4px black;
+        width: 400px;
+        height: 300px;
+        left: 30px;
+    }
+
+
+    .pago {
+        font-size: 20px;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .pago-tarjeta {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .bancos {
+        font-size: 60px;
+        margin-bottom: 55px;
+    }
+
+    .debito {
+        font-size: 15px;
+        padding: 30px;
+    }
+
+    .debito-logos {
+        font-size: 50px;
+        margin-bottom: 55px;
+        padding: 50px;
+    }
+
+    .mapa{
+        height: 80%;
+        width: 80%;
+        margin-top: 45px;
+    }
+
+}

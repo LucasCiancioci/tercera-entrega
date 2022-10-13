@@ -1,0 +1,46 @@
+main {
+    .carrito {
+        padding: 30px;
+       @extend %fuente;
+
+        @media screen and (max-width: 450px) {
+            padding: 0px;
+            font-size: 15px;
+            
+        }
+
+      
+
+      .imagen-carrito{
+        width: 40vw;
+        padding-bottom: 5%;
+        @media screen and (max-width: 450px) {
+            width: 100vw;
+        }     
+      }
+      
+
+        .carrito-bordes:hover {
+            transform: scale(1.5);
+            border: solid 5px black;
+            border-radius: 20px;
+            position: relative;
+            width: 320px;
+            height: 50px;
+            left: 760px;
+            transition: all 2s;
+
+            @media screen and (max-width: 450px) {
+                border: solid 5px black;
+                border-radius: 10px;
+                position: relative;
+                width: 300px;
+                height: 50px;
+                left: 50px;
+                margin-bottom: 50px;
+            }
+
+
+        }
+    }
+}

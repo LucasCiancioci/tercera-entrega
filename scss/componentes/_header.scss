@@ -1,0 +1,15 @@
+.pagina-color{
+    background-color: antiquewhite;
+header{
+    @extend %fuente ;
+         padding: 8px;  
+    ul{
+        @media screen and (max-width: 450px) {
+            font-size: 15px;
+            padding: 10px;
+        }
+    }
+}
+
+
+}

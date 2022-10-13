@@ -1,0 +1,53 @@
+main {
+    .pagina {
+        @extend %fuente ;
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 15px;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        article {
+            @media screen and (max-width: 450px) {
+                margin: 3%
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+                margin-top: 10%;
+
+                
+            }
+            .pagina-texto {
+                padding-left: 10%;
+                margin-right: 30px;
+
+                @media screen and (max-width: 450px) {
+                    padding-left: 0%;
+                    font-size: 15px;
+
+                }
+
+            }
+        }
+
+        .foto-menu {
+            @media screen and (max-width: 450px) {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                padding: 10% 0%;
+            }
+        }
+    }
+
+}

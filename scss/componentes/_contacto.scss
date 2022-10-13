@@ -1,0 +1,43 @@
+.contacto {
+    padding: 30px;
+    @extend %fuente ;
+    border: 1px black;
+
+    @media screen and (max-width: 450px) {
+        padding: 0px;
+        font-size: 20px;
+        padding-top: 15%;
+    }
+
+    .mapa {
+        @media screen and (max-width: 450px) {
+            height: 80%;
+            width: 80%;
+            margin-top: 55px;
+            padding-top: 10%;
+        }
+
+    }
+
+    .formulario {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: solid 4px black;
+        width: 400px;
+        height: 300px;
+        position: relative;
+        left: 740px;
+        border-radius: 50px;
+
+        @media screen and (max-width: 450px) {
+            margin-top: 25px;
+            margin-bottom: 80px;
+            border: solid 4px black;
+            width: 400px;
+            height: 300px;
+            left: 30px;
+        }
+
+    }
+    
+}
